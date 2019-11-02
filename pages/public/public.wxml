@@ -1,0 +1,6 @@
+<template name="title">
+    <div class="title">
+        <h2>{{category[0]}}</h2>
+        <a href="">更多</a>
+    </div>
+</template>

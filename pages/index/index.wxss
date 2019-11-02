@@ -1,0 +1,56 @@
+/**index.wxss**/
+@import "/pages/public/public.wxss";
+view,div,span{
+  font-size: 12px;
+}
+.head{
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  width: 750rpx;
+  height: 50rpx;
+  padding-bottom: 20rpx
+}
+.logo image{
+  width:182rpx;
+  height: 50rpx;
+}
+.head .logo{
+  margin-left: 20rpx;
+}
+.head .search{
+  margin:15rpx  20rpx 0 0;
+
+}
+.head .search image{
+  width: 36rpx;
+  height: 36rpx;
+}
+.banner image{
+  width: 750rpx;
+  height: 300rpx;
+}
+nav{
+  background: #fff;
+  
+}
+nav ul{
+  display: flex;
+  width: 750rpx;
+  justify-content: space-evenly;
+  padding:20rpx 0;
+}
+nav image{
+  width: 74rpx;
+  height: 74rpx;
+}
+nav li a{
+  display: flex;
+  flex-direction:column-reverse;
+  justify-content: space-between;
+}
+nav li a span{
+  position: relative;
+  top:15rpx;
+}
+

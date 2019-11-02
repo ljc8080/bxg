@@ -1,0 +1,64 @@
+<!-- <import src="/pages/public/public.wxml"></import> -->
+<view class="head">
+  <view class="logo">
+    <image class="" src="https://m.boxuegu.com/_nuxt/img/logo.4ba874d.png"></image>
+  </view>
+  <view class="search">
+    <a href="">
+      <image class="" src="https://m.boxuegu.com/_nuxt/img/search.f2a123d.png"></image>
+    </a>
+  </view>
+</view>
+<view class="banner">
+  <image src="https://attachment-center.boxuegu.com/data/picture/online/2019/09/04/14/a8759cfb1aee4ea6819a6ba13e425412.jpg" />
+</view>
+<nav>
+  <ul>
+    <li>
+      <a href="http://www.baidu.com">
+        <span>就业课</span>
+        <image src="https://m.boxuegu.com/web/images/index/course.png"></image>
+      </a>
+    </li>
+    <li>
+      <a href="http://www.baidu.com">
+        <span>就业课</span>
+        <image src="https://m.boxuegu.com/web/images/index/course.png"></image>
+      </a>
+    </li>
+    <li>
+      <a href="http://www.baidu.com">
+        <span>就业课</span>
+        <image src="https://m.boxuegu.com/web/images/index/course.png"></image>
+      </a>
+    </li>
+    <li>
+      <a href="http://www.baidu.com">
+        <span>就业课</span>
+        <image src="https://m.boxuegu.com/web/images/index/course.png"></image>
+      </a>
+    </li>
+  </ul>
+</nav>
+<block wx:for="{{info}}" wx:key="i">
+  <div class="goods">
+    <div class="title">
+      <h3>{{item.catename}}</h3>
+      <a href="">更多</a>
+    </div>
+    <block wx:for="{{item.info}}" wx:for-item="v" wx:key="k">
+      <div class="info">
+        <image src="{{v.logo}}"></image>
+        <div>
+          <h3>{{v.classname}}</h3>
+          <p wx:if="{{v.desc}}">{{v.desc}}</p>
+          <p wx:else>无</p>
+          <div>
+            <span>{{v.study}}</span>
+            <font>￥{{v.price}}</font>
+          </div>
+        </div>
+      </div>
+    </block>
+  </div>
+</block>
